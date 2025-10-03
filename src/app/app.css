@@ -1,0 +1,53 @@
+:root{
+--bg: #f6fbff;
+--card: #ffffff;
+--accent: #0077cc; /* azul principal */
+--accent-soft: rgba(0,119,204,0.08);
+--muted: #6b7280;
+--success: #10b981;
+}
+
+
+*{box-sizing:border-box}
+body{font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0}
+
+
+.planos-section{background:var(--bg); padding:48px 16px}
+.container{max-width:1100px; margin:0 auto}
+
+
+.cards{display:grid; gap:20px; grid-template-columns:repeat(3,1fr)}
+.card{background:var(--card); border-radius:12px; padding:22px; box-shadow:0 6px 18px rgba(12,20,40,0.06); border:1px solid rgba(0,0,0,0.04); display:flex; flex-direction:column; align-items:center; text-align:center; transition:transform .22s ease, box-shadow .22s ease, border-color .22s ease}
+.card:hover{transform:translateY(-6px); box-shadow:0 12px 30px rgba(12,20,40,0.08)}
+.card.destaque{border:2px solid var(--accent); box-shadow:0 20px 40px rgba(0,119,204,0.12)}
+.card.selecionado{outline:4px solid var(--accent-soft)}
+
+
+.card-top h2{margin:0; font-size:18px}
+.velocidade{color:var(--muted); font-weight:600; margin-top:6px}
+.price{font-size:28px; font-weight:700; margin:14px 0}
+.features{list-style:none; padding:0; margin:0 0 18px 0; color:var(--muted)}
+.features li{padding:6px 0; border-top:1px dashed rgba(0,0,0,0.04); width:100%}
+.btn-assinar{
+    background: #0077cc; 
+    color:#ffffff; 
+    border:none; 
+    padding:12px 20px; border-radius:10px; cursor:pointer; font-weight:600; width:100%}
+.btn-assinar:hover{filter:brightness(.95)}
+
+
+.observacao{margin-top:18px; text-align:center; color:var(--muted)}
+
+
+/* Responsividade */
+@media (max-width:980px){
+.cards{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:640px){
+.cards{grid-template-columns:1fr}
+.container{padding:0 8px}
+}
+
+
+/* Pequenhos detalhes visuais */
+.card::before{content:''; position:absolute; pointer-events:none}
