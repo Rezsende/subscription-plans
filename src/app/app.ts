@@ -4,6 +4,7 @@ import { Header } from './components/header/header';
 import { AboutUs } from './components/about-us/about-us';
 import { Statements } from './components/statements/statements';
 import { SelfService } from './components/self-service/self-service';
+import { Footer } from './components/footer/footer';
 
 interface Plano {
   id: string;
@@ -17,7 +18,7 @@ interface Plano {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, Header, AboutUs, Statements, SelfService],   
+  imports: [RouterOutlet, Header, AboutUs, Statements, SelfService, Footer],   
   templateUrl: './app.html',
   styleUrls: ['./app.css']  
 })
