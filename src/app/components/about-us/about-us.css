@@ -1,0 +1,46 @@
+.sobre-nos {
+  background: var(--bg);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.sobre-nos h2 {
+  color: var(--accent);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.descricao {
+  color: var(--muted);
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.valores {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.valor-card {
+  background: var(--card);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.valor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 119, 204, 0.1);
+}
+
+.valor-card h3 {
+  color: var(--accent);
+  margin-bottom: 10px;
+}

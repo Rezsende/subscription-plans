@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Header } from './components/header/header';
+import { AboutUs } from './components/about-us/about-us';
+import { Statements } from './components/statements/statements';
+import { SelfService } from './components/self-service/self-service';
 
 interface Plano {
   id: string;
@@ -14,7 +17,7 @@ interface Plano {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, Header],   
+  imports: [RouterOutlet, Header, AboutUs, Statements, SelfService],   
   templateUrl: './app.html',
   styleUrls: ['./app.css']  
 })

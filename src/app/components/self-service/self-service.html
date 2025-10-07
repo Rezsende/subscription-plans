@@ -1,0 +1,15 @@
+<section class="autoatendimento">
+  <h2>Autoatendimento para clientes</h2>
+
+  <div class="auto-container">
+    <div class="opcoes">
+      @for (item of opcoes; track $index) {
+        <div class="opcao">
+         <mat-icon>{{ item.icon }}</mat-icon>
+          <h4>{{ item.titulo }}</h4>
+          <p>{{ item.descricao }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>

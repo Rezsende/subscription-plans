@@ -1,0 +1,48 @@
+.depoimentos {
+  background: var(--card);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.depoimentos h2 {
+  color: var(--accent);
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.depo-card {
+  background: var(--bg);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  width: 300px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.depo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0, 119, 204, 0.15);
+}
+
+.depo-card.destaque {
+  border: 2px solid var(--accent);
+}
+
+.texto {
+  color: var(--muted);
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+.autor {
+  font-weight: 600;
+  color: var(--accent);
+}

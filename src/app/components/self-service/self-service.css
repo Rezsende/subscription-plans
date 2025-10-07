@@ -1,0 +1,63 @@
+.autoatendimento {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.autoatendimento h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.auto-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* --- Cards (lado direito) --- */
+.opcoes {
+  flex: 2 1 600px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.opcao {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.opcao:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
+.opcao img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.opcao h4 {
+  font-size: 1rem;
+  color: #222;
+  margin-bottom: 4px;
+}
+
+.opcao p {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .auto-container {
+    flex-direction: column;
+  }
+}
